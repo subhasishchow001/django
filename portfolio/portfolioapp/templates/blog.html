@@ -27,13 +27,14 @@
                 <div class="row content blog-grid masonry">
                     <main class="col-12 p-0">
                         <div class="bricklayer items columns-3">
+                            
                             <div class="card p-0 text-center item">
                                 <div class="image-over">
                                     <img src="{% static '/assets/images/news-1-h.jpg' %}" alt="Lorem ipsum">
                                 </div>
                                 <div class="card-caption col-12 p-0">
                                     <div class="card-body">
-                                        <a href="page-single-post-1.html">
+                                        <a href="#  ">
                                             <h4>Tips for having a good relationship at work.</h4>
                                         </a>
                                     </div>
@@ -43,22 +44,25 @@
                                     </div>
                                 </div>
                             </div>
-                            {% comment %} <div class="card p-0 text-center item">
+                            {% for blog  in blogs %}
+                            <div class="card p-0 text-center item">
                                 <div class="image-over">
-                                    <img src="{% static '/assets/images/news-2-h.jpg' %}" alt="Lorem ipsum">
+                                    <img src="/media/images/{{blog.backimg}}" alt="Lorem ipsum">
                                 </div>
                                 <div class="card-caption col-12 p-0">
                                     <div class="card-body">
                                         <a href="page-single-post-1.html">
-                                            <h4>Data scientists are a booming profession.</h4>
+                                            <h4>{{blog.bodytitle}}</h4>
                                         </a>
                                     </div>
                                     <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
+                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>{{blog.blogauthor}}</a>
+    
                                     </div>
                                 </div>
                             </div> 
+                            {% endfor %}
+                            {% comment %}
                             <div class="card p-0 text-center item">
                                 <div class="image-over">
                                     <img src="assets/images/news-3-h.jpg" alt="Lorem ipsum">
