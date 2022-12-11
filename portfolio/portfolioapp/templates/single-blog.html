@@ -18,7 +18,9 @@
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="/#demos">Home</a></li>
                                         <li class="breadcrumb-item"><a href="/#pages">Pages</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Single Post</li>
+                                        {% for blog in blogs %}
+                                        <li class="breadcrumb-item active" aria-current="page">{{blog.bodytitle}}</li>
+                                        {% endfor %}
                                     </ol>
                                 </nav>
                             </div>
