@@ -1143,7 +1143,7 @@ aside {
     position: relative;
     z-index: -1;
     height: auto;
-    min-height: 360px;
+    height: 360px;
     object-fit: cover;
     object-position: center;
 }
@@ -2350,6 +2350,7 @@ header .navbar-expand .navbar-brand img {
 	-ms-flex: 1;
 	flex: 1;
     margin: 0 15px;
+    height: 13em;
 }
 
 .bricklayer .item {

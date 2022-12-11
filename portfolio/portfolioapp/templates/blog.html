@@ -47,11 +47,11 @@
                             {% for blog  in blogs %}
                             <div class="card p-0 text-center item">
                                 <div class="image-over">
-                                    <img src="/media/images/{{blog.backimg}}" alt="Lorem ipsum">
+                                    <img src="{{blog.backimage.url}}" alt="Lorem ipsum">
                                 </div>
                                 <div class="card-caption col-12 p-0">
                                     <div class="card-body">
-                                        <a href="{% url 'blog_detail' %}">
+                                        <a href="#">
                                             <h4>{{blog.bodytitle}}</h4>
                                         </a>
                                     </div>
