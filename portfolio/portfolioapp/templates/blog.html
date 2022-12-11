@@ -27,24 +27,7 @@
                 <div class="row content blog-grid masonry">
                     <main class="col-12 p-0">
                         <div class="bricklayer items columns-3">
-                            
-                            <div class="card p-0 text-center item">
-                                <div class="image-over">
-                                    <img src="{% static '/assets/images/news-1-h.jpg' %}" alt="Lorem ipsum">
-                                </div>
-                                <div class="card-caption col-12 p-0">
-                                    <div class="card-body">
-                                        <a href="#  ">
-                                            <h4>Tips for having a good relationship at work.</h4>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                    </div>
-                                </div>
-                            </div>
-                            {% for blog  in blogs %}
+                            {% for blog in blogs %}
                             <div class="card p-0 text-center item">
                                 <div class="image-over">
                                     <img src="{{blog.backimage.url}}" alt="Lorem ipsum">
@@ -62,146 +45,52 @@
                                 </div>
                             </div> 
                             {% endfor %}
-                            {% comment %}
-                            <div class="card p-0 text-center item">
-                                <div class="image-over">
-                                    <img src="assets/images/news-3-h.jpg" alt="Lorem ipsum">
-                                </div>
-                                <div class="card-caption col-12 p-0">
-                                    <div class="card-body">
-                                        <a href="page-single-post-1.html">
-                                            <h4>Successful creations using virtual reality.</h4>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="card p-0 text-center item">
-                                <div class="image-over">
-                                    <img src="assets/images/news-4-h.jpg" alt="Lorem ipsum">
-                                </div>
-                                <div class="card-caption col-12 p-0">
-                                    <div class="card-body">
-                                        <a href="page-single-post-1.html">
-                                            <h4>Is the trend these days working from home?</h4>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="card p-0 text-center item">
-                                <div class="image-over">
-                                    <img src="assets/images/news-5-h.jpg" alt="Lorem ipsum">
-                                </div>
-                                <div class="card-caption col-12 p-0">
-                                    <div class="card-body">
-                                        <a href="page-single-post-1.html">
-                                            <h4>How digital transformation has changed the world.</h4>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="card p-0 text-center item">
-                                <div class="image-over">
-                                    <img src="assets/images/news-6-h.jpg" alt="Lorem ipsum">
-                                </div>
-                                <div class="card-caption col-12 p-0">
-                                    <div class="card-body">
-                                        <a href="page-single-post-1.html">
-                                            <h4>Why project management increases performance.</h4>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card p-0 text-center item">
-                                <div class="image-over">
-                                    <img src="assets/images/news-1-h.jpg" alt="Lorem ipsum">
-                                </div>
-                                <div class="card-caption col-12 p-0">
-                                    <div class="card-body">
-                                        <a href="page-single-post-1.html">
-                                            <h4>Tips for having a good relationship at work.</h4>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card p-0 text-center item">
-                                <div class="image-over">
-                                    <img src="assets/images/news-2-h.jpg" alt="Lorem ipsum">
-                                </div>
-                                <div class="card-caption col-12 p-0">
-                                    <div class="card-body">
-                                        <a href="page-single-post-1.html">
-                                            <h4>Data scientists are a booming profession.</h4>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="card p-0 text-center item">
-                                <div class="image-over">
-                                    <img src="assets/images/news-3-h.jpg" alt="Lorem ipsum">
-                                </div>
-                                <div class="card-caption col-12 p-0">
-                                    <div class="card-body">
-                                        <a href="page-single-post-1.html">
-                                            <h4>Successful creations using virtual reality.</h4>
-                                        </a>
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                    </div>
-                                </div>
-                            </div>  {% endcomment %}
                         </div>
                     </main>
                 </div>
 
                 <!-- Pagination -->
-                <div class="row">
+               <div class="row">
                     <div class="col-12">
                         <nav>
                             <ul class="pagination justify-content-center">
+                                {% if blog.has_previous %}
+                                <li class="page-item"><a class="page-link" href="/blog/?page=1">First</a></li>
                                 <li class="page-item">
-                                    <a class="page-link" href="#" tabindex="-1">
+                                    <a class="page-link" href="/blog/?page={{page_obj.previous_page_number}}" tabindex="-1">
                                         <i class="icon-arrow-left"></i>
                                     </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item active"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                </li>              
+                                {% endif %}  
+                                {% if blog.has_next %}
+                                <li class="page-item"><a class="page-link" href="/blog/?page={{lastpage}}">last</a></li>
                                 <li class="page-item">
-                                    <a class="page-link" href="#">
+                                    <a class="page-link" href="/blog/?page={{page_obj.next_page_number}}">
                                         <i class="icon-arrow-right"></i>
                                     </a>
                                 </li>
+                                {% endif %}
                             </ul>
                         </nav>
                     </div>
-                </div>
+                </div> 
+                {% comment %} <div class="pagination">
+                    <span class="step-links">
+                        {% if page_obj.has_previous %}
+                            <a href="?page=1">&laquo; first</a>
+                            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                        {% endif %}
+                
+                        <span class="current">
+                            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                        </span>
+                
+                        {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.next_page_number }}">next</a>
+                            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                        {% endif %}
+                    </span>
+                </div> {% endcomment %}
             </div>
         </section>
 
