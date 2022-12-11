@@ -1,0 +1,470 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <!-- Hero -->
+        <section id="slider" class="hero p-0 odd featured">
+            <div class="swiper-container no-slider animation slider-h-100">
+                <div class="swiper-wrapper">
+
+                    <!-- Item 1 -->
+                    <div class="swiper-slide slide-center">
+                        <img src="{% static '/assets/images/bg-8.jpg' %}" class="full-image" data-mask="50">
+                        <div class="slide-content row">
+                            <div class="col-12 d-flex inner">
+                                <div class="center align-self-center text-center">
+                                    <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">Photography<br>& Visual Art</h2>
+                                    <a href="#contact" data-aos="zoom-out-up" data-aos-delay="1200" class="smooth-anchor ml-auto mr-auto mt-5 btn dark-button"><i class="icon-cup"></i>GET STARTED</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section-1 odd counter skills featured">
+            <div class="container">
+                <div class="row text-center intro">
+                    <div class="col-12">
+                        <h2 class="super effect-static-text">Main Skills</h2>
+                        <p class="text-max-800">We see all types of projects as if they were ours. This brings us closer to our clients' projects bringing much more confidence and commitment.</p>
+                    </div>
+                </div>
+                <div data-aos-id="counter" data-aos="fade-up" data-aos-delay="200" class="row justify-content-center text-center items">
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div data-percent="42" class="radial">
+                            <span></span>
+                        </div>
+                        <h4>Marketing</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div data-percent="60" class="radial">
+                            <span></span>
+                        </div>
+                        <h4>Branding</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div data-percent="84" class="radial">
+                            <span></span>
+                        </div>
+                        <h4>Web Design</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div data-percent="100" class="radial">
+                            <span></span>
+                        </div>
+                        <h4>WordPress</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section id="portfolio-grid" class="section-2 odd showcase portfolio blog-grid filter-section featured">
+            <div class="overflow-holder">
+                <div class="container full-grid">
+                    <div class="row text-center intro">
+                        <div class="col-12">
+                            <h2 class="mb-0 super effect-static-text">What We Do</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn active">
+                                    <input type="radio" value="all" checked class="btn-filter-item">
+                                    <span>All</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" value="design-thinking" class="btn-filter-item">
+                                    <span>Design Thinking</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" value="branding" class="btn-filter-item">
+                                    <span>Branding</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" value="photography" class="btn-filter-item">
+                                    <span>Photography</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" value="digital-marketing" class="btn-filter-item">
+                                    <span>Digital Marketing</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" value="technology" class="btn-filter-item">
+                                    <span>Technology</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row items filter-items">
+
+                        <div class="col-12 col-md-6 col-lg-4 item filter-item" data-groups='["technology","digital-marketing","photography"]'>
+                            <div class="row card p-0 text-center">
+                                <div class="gallery">
+                                    <a href="{% static '/assets/images/news-7-h.jpg' %}" class="image-over">
+                                        <img src="{% static '/assets/images/news-7-h.jpg' %}" alt="Lorem ipsum">
+                                    </a>
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 item filter-item" data-groups='["technology","branding"]'>
+                            <div class="row card p-0 text-center">
+                                <div class="gallery">
+                                    <a href="{% static '/assets/images/news-8-h.jpg' %}" class="image-over">
+                                        <img src="{% static '/assets/images/news-8-h.jpg' %}" alt="Lorem ipsum">
+                                    </a>
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 item filter-item" data-groups='["technology","digital-marketing"]'>
+                            <div class="row card p-0 text-center">
+                                <div class="gallery">
+                                    <a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="image-over">
+                                        <i class="play-video-full icon-control-play"></i>
+                                        <div class="mask-radius-full"></div>
+                                        <img src="{% static '/assets/images/news-9-h.jpg' %}" alt="Lorem ipsum">
+                                    </a>
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 item filter-item" data-groups='["design-thinking","digital-marketing","photography"]'>
+                            <div class="row card p-0 text-center">
+                                <div class="gallery">
+                                    <a href="{% static '/assets/images/news-10-h.jpg' %}" class="image-over">
+                                        <img src="{% static '/assets/images/news-10-h.jpg' %}" alt="Lorem ipsum">
+                                    </a>
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 item filter-item" data-groups='["design-thinking","branding"]'>
+                            <div class="row card p-0 text-center">
+                                <div class="gallery">
+                                    <a href="{% static '/assets/images/news-11-h.jpg' %}" class="image-over">
+                                        <img src="{% static '/assets/images/news-11-h.jpg' %}" alt="Lorem ipsum">
+                                    </a>
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 item filter-item" data-groups='["design-thinking","branding","photography"]'>
+                            <div class="row card p-0 text-center">
+                                <div class="gallery">
+                                    <a href="{% static '/assets/images/news-12-h.jpg' %}" class="image-over">
+                                        <img src="{% static '/assets/images/news-12-h.jpg' %}" alt="Lorem ipsum">
+                                    </a>
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    
+                        <div class="col-1 filter-sizer"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="section-3 odd offers featured">
+            <div class="container">
+                <div class="row text-center intro">
+                    <div class="col-12">
+                        <h2 class="mb-0 super effect-static-text">Services</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center items">
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card no-hover">
+                            <i class="icon icon-globe"></i>
+                            <h4>Website Pro</h4>
+                            <p>We build professional responsive websites optimized for the most popular search engines.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card no-hover">
+                            <i class="icon icon-basket"></i>
+                            <h4>E-Commerce</h4>
+                            <p>Increase your sales with an incredible online store, full of features and functionality.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card no-hover">
+                            <i class="icon icon-screen-smartphone"></i>
+                            <h4>Mobile Apps</h4>
+                            <p>Follow the global trend and create your revolutionary mobile app built with the best technologies.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card no-hover">
+                            <i class="icon icon-layers"></i>
+                            <h4>Web Application</h4>
+                            <p>We build applications for different purposes using technologies that allow you more security.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card no-hover">
+                            <i class="icon icon-chart"></i>
+                            <h4>Digital Marketing</h4>
+                            <p>We work to promote your brand in partnership with the best marketing platforms today.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="card no-hover">
+                            <i class="icon icon-bulb"></i>
+                            <h4>Brand Creation</h4>
+                            <p>We create your brand thinking about your target audience using design techniques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="section-4 odd plans featured custom">
+            <div class="container">
+                <div class="row text-center intro">
+                    <div class="col-12">
+                        <h2 class="super effect-static-text">Plans and Pricing</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center items">
+                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                        <div class="card">
+                            <i class="icon icon-handbag"></i>
+                            <h4>Essential</h4>
+                            <span class="price"><i>$</i>129</span>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>1 GB Photos</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Secure Online Transfer</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Unlimited Styles</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Customer Service</span>
+                                    <i class="icon-min m-0 icon-close text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Manual Backup</span>
+                                    <i class="icon-min m-0 icon-close text-right"></i>
+                                </li>
+                            </ul>
+                            <a href="#contact" class="smooth-anchor btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>CHOSE PLAN</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                        <div class="card">
+                            <i class="icon icon-fire"></i>
+                            <h4>Standard</h4>
+                            <span class="price"><i>$</i>199</span>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>3 GB Photos</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Secure Online Transfer</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Unlimited Styles</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Customer Service</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Manual Backup</span>
+                                    <i class="icon-min m-0 icon-close text-right"></i>
+                                </li>
+                            </ul>
+                            <a href="#contact" class="smooth-anchor btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>CHOSE PLAN</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                        <div class="card">
+                            <i class="icon icon-diamond"></i>
+                            <h4>Premium</h4>
+                            <span class="price"><i>$</i>299</span>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Unlimited Photos</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Secure Online Transfer</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Unlimited Styles</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Customer Service</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Manual Backup</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                            </ul>
+                            <a href="#contact" class="smooth-anchor btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>CHOSE PLAN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get -->
+        <section id="get" class="section-5 odd hero p-0 featured">
+            <div class="swiper-container no-slider animation slider-h-100">
+                <div class="swiper-wrapper">
+
+                    <!-- Item 1 -->
+                    <div class="swiper-slide slide-center">
+
+                        <video class="full-image" data-mask="70" playsinline autoplay muted loop>
+                            <source src="{% static '/assets/videos/lens.mp4' %}" type="video/mp4" />
+                        </video> 
+                        <!-- 
+                            Suggestion: Add a video to your assets folder and configure it here.
+
+                            <video type="video/mp4" class="full-image" data-mask="70" src="{% static 'assets/videos/yourvideo.mp4' %}" autoplay muted loop></video> 
+                        -->
+
+                        <div class="slide-content row">
+                            <div class="col-12 d-flex inner">
+                                <div class="left align-self-center text-center text-md-left">
+                                    <h2 class="super effect-static-text">Success Story</h2>
+                                    <p class="description">We have been working with photography and visual arts for 8 years. We keep unforgettable moments from your life trajectory.</p>
+                                    <p class="description">Our work is recognized by all our customers. We guarantee an excellent quality service in every way.</p>
+                                    <p class="description">
+                                        <blockquote>Count on us for your next visual art project.</blockquote>
+                                    </p>
+                                    <a href="#contact" class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn primary-button">GET IN TOUCH</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section-6 odd form">
+            <div class="container smaller">
+                <div class="row text-center intro">
+                    <div class="col-12">
+                        <h2 class="mb-0 super effect-static-text">Let's Talk?</h2>
+                    </div>
+                </div>
+                <form action="php/form.php" id="leverage-simple-form" class="leverage-simple-form">
+                    <input type="hidden" name="section" value="leverage_form">
+
+                    <input type="hidden" name="reCAPTCHA">
+                    <!-- Remove this field if you want to disable recaptcha -->
+
+                    <div class="row form-group-margin">
+                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                            <input type="text" name="name" class="form-control field-name" placeholder="Name">
+                        </div>
+                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                            <input type="email" name="email" class="form-control field-email" placeholder="Email">
+                        </div>
+                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                            <input type="text" name="phone" class="form-control field-phone" placeholder="Phone">
+                        </div>
+                        <div class="col-12 col-md-6 m-0 p-2 input-group">
+                            <i class="icon-arrow-down mr-3"></i>
+                            <select name="budget" class="form-control field-budget">
+                                <option value="" selected disabled>What's your budget range?</option>
+                                <option>Less than $2.000</option>
+                                <option>$2.000 — $5.000</option>
+                                <option>$5.000 — $10.000</option>
+                                <option>$10,000+</option>
+                            </select>
+                        </div>
+                        <div class="col-12 m-0 p-2 input-group">
+                            <textarea name="message" class="form-control field-message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12 col-12 m-0 pl-md-2">
+                            <span class="form-alert"></span>
+                        </div>
+                        <div class="col-12 input-group m-0 p-2">
+                            <a class="btn primary-button">SEND</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="odd">
+
+            <!-- Footer [links] -->
+{% endblock %}
