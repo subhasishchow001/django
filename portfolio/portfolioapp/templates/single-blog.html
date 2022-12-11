@@ -32,25 +32,14 @@
         <section id="content" class="section-1 single featured">
             <div class="container">
                 <div class="row">
-
+                    
                     <!-- Main -->
                     <main class="col-12 col-lg-8 p-0">
                         <div class="row">
                             <div class="col-12 align-self-center">
-                                <h2 class="featured mt-0 ml-0">Content</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit tortor, interdum sed cursus eu, sagittis ut nunc. Sed vitae tellus et arcu aliquet faucibus fermentum non lacus.</p>
-                                <p>Praesent fringilla quis massa et placerat. Mauris eu dui eget urna pellentesque gravida vitae quis nibh. Ut at augue tortor. Pellentesque quis suscipit magna.</p>
-                                <p>
-                                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam tortor, ultrices accumsan mauris eget, pulvinar tincidunt erat. Sed nisi nisi, rutrum sit amet elit.</blockquote>
-                                </p>
-                                <p>Sed mauris nulla, tempor eu est vel, dapibus hendrerit mauris curabitur dictum pharetra.</p>
-
-                                <!-- Image -->
-                                <div class="gallery">
-                                    <a href="assets/images/news-3.jpg">
-                                        <img src="assets/images/news-3.jpg" class="w-100">
-                                    </a>
-                                </div>
+                                {% for blog  in blogs %}
+                                <h2 class="featured mt-0 ml-0">{{blog.bodytitle}}</h2>
+                                <p>{{blog.blogbody}}</p>
 
                                 <p>Etiam mollis sem sed bibendum blandit. Aenean quis luctus ligula, vitae suscipit dui. Nunc diam orci, tincidunt eget consectetur sit amet, vulputate.</p>
                                 <h4>Lorem ipsum dolor</h4>
@@ -68,7 +57,7 @@
                                         <time class="date"><span class="posted-on">Posted on <a href="#" rel="bookmark"><time class="entry-date published updated" datetime="2018-11-01T06:18:46+00:00">November 12, 2019</time></a></span></time>
                                     </li>
                                 </ul>
-
+                                {% endfor %}
                                 <!-- Comments -->
                                 <h3>Leave a Reply</h3>
                                 <p>Sed mauris nulla, tempor eu est vel, dapibus hendrerit mauris.</p>
@@ -208,6 +197,7 @@
                         </div>
                     </aside>
                 </div>
+                
             </div>
         </section>
 
@@ -221,111 +211,22 @@
                             <p class="text-max-800">Every week we publish exclusive content on various topics.</p>
                         </div>
                     </div>
+                    {% for blog in blogs %}
                     <div class="swiper-container mid-slider items">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide-center item">
                                 <div class="row card p-0 text-center">
                                     <div class="image-over">
-                                        <img src="assets/images/news-1-h.jpg" alt="Lorem ipsum">
+                                        <img src="{{blog.backimg}}" alt="Lorem ipsum">
                                     </div>
                                     <div class="card-caption col-12 p-0">
                                         <div class="card-body">
                                             <a href="page-single-post-1.html">
-                                                <h4 class="m-0">Tips for having a good relationship at work.</h4>
+                                                <h4 class="m-0">{{blog.bodytitle}}</h4>
                                             </a>
                                         </div>
                                         <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="assets/images/news-2-h.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="page-single-post-3.html">
-                                                <h4 class="m-0">Data scientists are a booming profession.</h4>
-                                            </a>
-                                        </div>
-                                        <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="assets/images/news-3-h.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="page-single-post-1.html">
-                                                <h4 class="m-0">Successful creations using virtual reality.</h4>
-                                            </a>
-                                        </div>
-                                        <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="assets/images/news-4-h.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="page-single-post-1.html">
-                                                <h4 class="m-0">Is the trend these days working from home?</h4>
-                                            </a>
-                                        </div>
-                                        <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="assets/images/news-5-h.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="page-single-post-2.html">
-                                                <h4 class="m-0">How digital transformation has changed the world.</h4>
-                                            </a>
-                                        </div>
-                                        <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="assets/images/news-6-h.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="page-single-post-4.html">
-                                                <h4 class="m-0">Why project management increases performance.</h4>
-                                            </a>
-                                        </div>
-                                        <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
+                                            <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>{{blog.blogauthor}}</a>
                                             <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
                                         </div>
                                     </div>
@@ -334,6 +235,7 @@
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>

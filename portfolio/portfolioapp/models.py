@@ -12,10 +12,10 @@ class Blogposts(models.Model):
     bodytitle= models.CharField(max_length=100)
     blogauthor=models.CharField(max_length=50)
     blogbody=models.TextField()
-    # dates=models.DateTimeField(default=datetime.now,blank=True)
 
     def __str__(self):
         return self.bodytitle
 
     def __unicode__(self):
         return self.bodytitle
+
