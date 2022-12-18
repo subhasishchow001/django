@@ -10,7 +10,7 @@ import os
 
 #for admin index
 def indexpage(request):
-    return render(request,'index.html')
+    return render(request,'index.html')  
 #for add product
 def new_product(request):
     return render(request,'add-new-product.html')
@@ -95,7 +95,7 @@ def register(request):
                 user.save()
                 document.save()
         else:
-            return HttpResponse("<script>alert('password doesnot mached')</script>")
+            return HttpResponse("password doesnot mached")
         return redirect('administrator/')   
 
     # else:

@@ -23,6 +23,4 @@ urlpatterns = [
     path('administrator/',include('backend.urls')),
     path('',include('frontend.urls')),
 
-]
-
-urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
